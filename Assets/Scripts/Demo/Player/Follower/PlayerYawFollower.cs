@@ -6,7 +6,8 @@ namespace JoeBinns.Spacetime.Player.Follower
 	{
 		private void FixedUpdate()
 		{
-			var rotation = Quaternion.LookRotation(PlayerController.Instance.transform.forward, Vector3.up);;
+			var horizontalLookDirection = Vector3.ProjectOnPlane(PlayerController.Instance.transform.forward, Vector3.up);
+			var rotation = Quaternion.LookRotation(horizontalLookDirection, Vector3.up);
 			transform.rotation = rotation;
 		}
 	}
