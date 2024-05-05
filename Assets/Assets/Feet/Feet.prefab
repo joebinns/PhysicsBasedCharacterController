@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particleSystem: {fileID: 4979115247504253106}
+  _dynamicPlatformFollower: {fileID: 0}
   _burstCount: 7
 --- !u!1 &1916889823516282175
 GameObject:
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particleSystem: {fileID: 1620882045477809662}
+  _dynamicPlatformFollower: {fileID: 0}
   _burstCount: 3
 --- !u!1 &7671442943077380714
 GameObject:
@@ -288,6 +290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867880130921806642, guid: e38dda6036f25244491ee99a28ace8e8,
+        type: 3}
+      propertyPath: _normalisedDelay
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7959906280478018574, guid: e38dda6036f25244491ee99a28ace8e8,
         type: 3}

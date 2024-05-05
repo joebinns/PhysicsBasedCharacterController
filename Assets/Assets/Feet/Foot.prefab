@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2742134431322072989}
-  - component: {fileID: 8454177353611329306}
   - component: {fileID: 5313485590826067399}
+  - component: {fileID: 3867880130921806642}
   m_Layer: 0
   m_Name: Footstep Handler
   m_TagString: Untagged
@@ -34,22 +34,6 @@ Transform:
   - {fileID: 635652071143938148}
   m_Father: {fileID: 74922005110756140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8454177353611329306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446682228848539692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53a2b5ec45f2684689bfbe0ed055dbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speedometer: {fileID: 0}
-  _interval: 3
-  _delay: 1
-  _useSpeedFactor: 1
 --- !u!114 &5313485590826067399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,8 +46,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc461ef3f163e55489e384d2f3420b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _footstepHandler: {fileID: 8454177353611329306}
   _particleSystem: {fileID: 635652071143938150}
+  _dynamicPlatformFollower: {fileID: 0}
+  _footstepHandler: {fileID: 3867880130921806642}
+--- !u!114 &3867880130921806642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446682228848539692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53a2b5ec45f2684689bfbe0ed055dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speedometer: {fileID: 0}
+  _interval: 2
+  _normalisedDelay: 0
 --- !u!1 &8802150367669719428
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _groundCheck: {fileID: 0}
-  _footstepHandler: {fileID: 8454177353611329306}
+  _footstepHandler: {fileID: 3867880130921806642}
 --- !u!1001 &231742620783539970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154,11 +154,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3085808002088584051, guid: a266112aca1b11448a73b605bd2b2b0e,
-        type: 3}
-      propertyPath: _footstepHandler
-      value: 
-      objectReference: {fileID: 8454177353611329306}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
