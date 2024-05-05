@@ -59,8 +59,7 @@ namespace JoeBinns.Spacetime.Player
 			// Calculate restoring force
 			var restoringForceMagnitude = (rideHeightError * _stiffness - relativeVerticalVelocity * _damper);
 			var restoringForce = restoringForceMagnitude * Vector3.down;
-			var gravitationalForce = PlayerController.Instance.Rigidbody.mass * Physics.gravity;
-			var gravityCorrectedRestoringForce = restoringForce - gravitationalForce;
+			var gravityCorrectedRestoringForce = restoringForce - PlayerController.Instance.Gravity.Force;
 
 			// Apply restoring force
 			PlayerController.Instance.Rigidbody.AddForce(gravityCorrectedRestoringForce, ForceMode.Force);

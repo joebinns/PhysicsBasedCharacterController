@@ -16,6 +16,7 @@ namespace JoeBinns.Spacetime.Player
 		[SerializeField] private PlayerLevitator _levitator;
 		[SerializeField] private PlayerMovement _movement;
 		[SerializeField] private PlayerErector _erector;
+		[SerializeField] private PlayerGravity _gravity;
 		[SerializeField] private PlayerJump _jump;
 		[SerializeField] private Rigidbody _rigibody;
 		[SerializeField] private Collider _collider;
@@ -29,6 +30,7 @@ namespace JoeBinns.Spacetime.Player
 		public PlayerLevitator Levitator => _levitator;
 		public PlayerMovement Movement => _movement;
 		public PlayerErector Erector => _erector;
+		public PlayerGravity Gravity => _gravity;
 		public PlayerJump Jump => _jump;
 		public Rigidbody Rigidbody => _rigibody;
 		public Collider Collider => _collider;

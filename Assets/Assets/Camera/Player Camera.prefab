@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102129898845151905}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38268346, y: -0.000000022484535, z: 0.000000009313399, w: 0.92387956}
+  m_LocalRotation: {x: 0.22243899, y: -0.0000000038537826, z: 8.792601e-10, w: 0.9749466}
   m_LocalPosition: {x: 0, y: 5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 5367337095809250601}
   - component: {fileID: 6086484721663636284}
   - component: {fileID: 5726050992973319243}
-  - component: {fileID: 8924736279151253769}
+  - component: {fileID: 3142198828137588355}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_LegacyHeightOffset: 3.4028235e+38
   m_LegacyHeadingBias: 3.4028235e+38
   m_HeadingIsSlave: 0
---- !u!114 &8924736279151253769
+--- !u!114 &3142198828137588355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,16 +205,16 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
+  m_HorizontalDamping: 0
+  m_VerticalDamping: 0
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenY: 0.75
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
-  m_BiasY: 0
+  m_BiasY: -0.3
   m_CenterOnActivate: 1
 --- !u!1 &6389104376536077694
 GameObject:

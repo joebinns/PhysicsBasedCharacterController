@@ -69,7 +69,7 @@ namespace JoeBinns.Spacetime.Player
 
 		private void Jump()
 		{
-			var initialJumpSpeed = GetInitialJumpSpeed(_jumpHeight, Mathf.Abs(Physics.gravity.y));
+			var initialJumpSpeed = GetInitialJumpSpeed(_jumpHeight, PlayerController.Instance.Gravity.ForceMagnitude);
 			var initialJumpVelocity = Vector3.up * initialJumpSpeed;
 			var rigidbody = PlayerController.Instance.Rigidbody;
 			var deltaVelocity = initialJumpVelocity - rigidbody.velocity;
