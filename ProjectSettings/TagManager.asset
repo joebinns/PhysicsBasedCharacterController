@@ -5,8 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Effects
-  - Respawn Points
-  - Explosions
   layers:
   - Default
   - TransparentFX
@@ -14,10 +12,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Platform
-  - Falling
+  - Held
+  - Stashed
+  - Vehicle
   - Player
-  - 
   - 
   - 
   - 

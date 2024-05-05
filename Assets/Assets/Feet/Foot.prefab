@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &446682228848539692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2742134431322072989}
+  - component: {fileID: 8454177353611329306}
+  - component: {fileID: 5313485590826067399}
+  m_Layer: 0
+  m_Name: Footstep Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2742134431322072989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446682228848539692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 635652071143938148}
+  m_Father: {fileID: 74922005110756140}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8454177353611329306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446682228848539692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53a2b5ec45f2684689bfbe0ed055dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speedometer: {fileID: 0}
+  _interval: 3
+  _delay: 1
+  _useSpeedFactor: 1
+--- !u!114 &5313485590826067399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446682228848539692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc461ef3f163e55489e384d2f3420b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _footstepHandler: {fileID: 8454177353611329306}
+  _particleSystem: {fileID: 635652071143938150}
+--- !u!1 &8802150367669719428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 74922005110756140}
+  - component: {fileID: 7959906280478018574}
+  m_Layer: 0
+  m_Name: Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74922005110756140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8802150367669719428}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2742134431322072989}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7959906280478018574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8802150367669719428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ee63f27b5a0c84ebf4fb97676914c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _groundCheck: {fileID: 0}
+  _footstepHandler: {fileID: 8454177353611329306}
+--- !u!1001 &231742620783539970
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2742134431322072989}
+    m_Modifications:
+    - target: {fileID: 857120575667597157, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: m_Name
+      value: Footstep Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 857120575667597158, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 857120575667597158, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 857120575667597158, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 857120575667597158, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 857120575667597158, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 857120575667597158, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085808002088584051, guid: a266112aca1b11448a73b605bd2b2b0e,
+        type: 3}
+      propertyPath: _footstepHandler
+      value: 
+      objectReference: {fileID: 8454177353611329306}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a266112aca1b11448a73b605bd2b2b0e, type: 3}
+--- !u!4 &635652071143938148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 857120575667597158, guid: a266112aca1b11448a73b605bd2b2b0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 231742620783539970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &635652071143938150 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 857120575667597156, guid: a266112aca1b11448a73b605bd2b2b0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 231742620783539970}
+  m_PrefabAsset: {fileID: 0}
